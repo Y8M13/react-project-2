@@ -2,7 +2,7 @@ import React from 'react'
 
 const TaskLog = ()  => {
   return (
-    <div>TaskLog</div>
+    <div>Task Log</div>
   )
 }
 

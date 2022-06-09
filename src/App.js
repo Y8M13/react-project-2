@@ -1,21 +1,26 @@
 import { Route } from 'react-router-dom';
-import Home from './components/Home';
-import TaskLog from './components/TaskLog';
-import TaskForm from './components/TaskForm';
+import Home from './components/Home.js';
+import TaskLog from './components/TaskLog.js';
+import TaskForm from './components/TaskForm.js';
+import MainHeader from './components/MainHeader.js';
+// import './index.css';
 
 
 function App() {
   return (
-    <div className="App">
-      <Route path="/home">
-        <Home />
-      </Route>
-      <Route path="/taskLog">
-        <TaskLog />
-      </Route>
-      <Route path="/taskForm">
-        <TaskForm />
-      </Route>
+    <div>
+      <MainHeader />
+      <main>
+        <Route path='/home'>
+          <Home />
+        </Route>
+        <Route path='/taskLog'>
+         <TaskLog />
+        </Route>
+        <Route path='/taskForm'>
+         <TaskForm />
+        </Route>
+      </main>
     </div>
   );
 }
