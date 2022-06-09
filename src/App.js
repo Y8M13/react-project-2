@@ -11,14 +11,14 @@ function App() {
     <div>
       <MainHeader />
       <main>
-        <Route path='/home'>
-          <Home />
-        </Route>
         <Route path='/taskLog'>
          <TaskLog />
         </Route>
         <Route path='/taskForm'>
          <TaskForm />
+        </Route>
+        <Route path='/home'>
+          <Home />
         </Route>
       </main>
     </div>
