@@ -1,3 +1,5 @@
+/*Will need to pull this out...*/
+
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
@@ -9,7 +11,7 @@ const MainHeader = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to='/home'>Home</NavLink>
+            <NavLink to='/home'>Task Manager</NavLink>
           </li>
           <li>
             <NavLink to='/taskLog'>Task Log</NavLink>

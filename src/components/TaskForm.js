@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const TaskForm = () => {
   return (
-    <div>Task Form</div>
+    <div>
+      <h2>Add New Task</h2>
+    </div>    
   )
 }
 

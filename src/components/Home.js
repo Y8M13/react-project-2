@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const Home = () => {
   return (
-    <div>Welcome To My Task Manager</div>
-    
+    <div>
+      <h1>Welcome To My Task Manager</h1>
+    </div>
   )
 }
 

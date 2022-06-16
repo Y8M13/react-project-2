@@ -29,7 +29,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #e0e9f5;
+  background-color: #aeb2b5;
 }
 
 main {
@@ -37,9 +37,13 @@ main {
   text-align: center;
 }
 
-h1,
 h2,
 h3,
 p {
-  color: #042b5f;
+  color: #0e131a;
 }
+
+h1 {
+  color: rgb(220, 28, 166);
+}
+

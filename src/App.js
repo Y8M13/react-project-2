@@ -1,28 +1,27 @@
-import { Route } from 'react-router-dom';
+
+import React from 'react';
+import './App.css';
 import Home from './components/Home.js';
 import TaskLog from './components/TaskLog.js';
 import TaskForm from './components/TaskForm.js';
-import MainHeader from './components/MainHeader.js';
-// import './index.css';
+import NavBar from './components/NavBar.js';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
-function App() {
+
+const App = () => {
   return (
-    <div>
-      <MainHeader />
-      <main>
-        <Route path='/taskLog'>
-         <TaskLog />
-        </Route>
-        <Route path='/taskForm'>
-         <TaskForm />
-        </Route>
-        <Route path='/home'>
-          <Home />
-        </Route>
-      </main>
-    </div>
-  );
+    <Router>
+      <div className='App'>
+        <NavBar />
+        <Switch>
+          <Route path="/" exact component={ Home } />
+          <Route path="/tasklog" component={ TaskLog } />
+          <Route path="/taskform" component={ TaskForm } />
+        </Switch>
+      </div>
+    </Router>
+  )
 }
 
 export default App;
