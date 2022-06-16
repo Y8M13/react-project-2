@@ -17,5 +17,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
 
+.container {
+  border: 3px solid blue;
 }
