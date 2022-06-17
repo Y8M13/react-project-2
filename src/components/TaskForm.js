@@ -3,7 +3,8 @@ import React from 'react';
 const TaskForm = () => {
   return (
     <div className="container">
-      <form>
+      <h1>Add New Task</h1>
+      {/* <form>
         <h2>Add New Task</h2>
         <div>
           <label htmlFor="date">Date</label>
@@ -18,8 +19,8 @@ const TaskForm = () => {
           <input type="text" category="category" id="category" />
         </div>
         <div>
-          <label htmlhtmlFor="priority">Priority</label>
-          <input type="text" Priority="priority" id="priority" />
+          <label htmlFor="priority">Priority</label>
+          <input type="text" priority="priority" id="priority" />
         </div>
         <div>
           <label htmlFor="status">Status</label>
@@ -35,7 +36,7 @@ const TaskForm = () => {
         </div>
         <br/>
         <button type="submit" className="btn">Submit</button>
-      </form>   
+      </form>    */}
     </div> 
   )
 }

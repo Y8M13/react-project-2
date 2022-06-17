@@ -1,29 +1,36 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const TaskLog = ()  => {
-
     useEffect(() => {
-       fetchTasks();
+      //  fetchTodos();
+       fetchTaskers();
     }, []);
 
-   const [tasks, setTasks] = useState([]); 
+  // const [todos, setTodos] = useState([]); 
+  const [taskers, setTaskers] = useState([]); 
 
-   const fetchTasks = async () => {
-     const data = await fetch('http://localhost:3000/tasks');
+    const fetchTaskers = async () => {
+      //  const data = await fetch( 'https://jsonplaceholder.typicode.com/todos' );
+      const data = await fetch( 'http://localhost:4000' );
 
-     const tasks = await data.json();
-     console.log(tasks);
-     setTasks(tasks);
-   };
+      const taskers = await data.json();
+      console.log(taskers);
+      setTaskers(taskers);
+    };
 
   return (
     <div>
-      {tasks.map(task =>(
-        <h1 key={ task.id }>{ task.name }</h1>
+      <h2>Task Log</h2>
+      {taskers.map(tasker =>(
+        <h1 key={ tasker.id }>
+        {/* <Link to={`/tasklog/${todo.id}`}>{ todo.title }</Link>   */}
+        <Link to={`/tasklog/${tasker.id}`}>{ tasker.date }</Link>  
+        </h1> 
       ))}
     </div>
-  )
+  );
 }
 
 export default TaskLog;

@@ -1,0 +1,24 @@
+{
+   "taskers": [
+      {   
+         "id":1,
+         "date": "13 June 2022", 
+         "name": "Calculus Homework", 
+         "category": "School",
+         "priority": "Low",
+         "status": "Not Started",
+         "deadline": "18 June 2022",
+         "comments": "Need to complete Ch 1"
+      },
+      {   
+         "id":2,
+         "date": "15 June 2022", 
+         "name": "Pay Bills", 
+         "category": "Expenses",
+         "priority": "High",
+         "status": "In Progress",
+         "deadline": "17 June 2022",
+         "comments": "June Bills are DUE!"
+      }
+   ]
+}
