@@ -15,9 +15,12 @@ const TaskLog = ()  => {
       //  const data = await fetch( 'https://jsonplaceholder.typicode.com/todos' );
       const data = await fetch( 'http://localhost:4000' );
 
+      // const todos = await data.json();
       const taskers = await data.json();
       console.log(taskers);
+      // setTodos(todos);
       setTaskers(taskers);
+      taskers = data;
     };
 
   return (

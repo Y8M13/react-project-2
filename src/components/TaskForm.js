@@ -1,10 +1,16 @@
 import React from 'react';
 
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  console.log("You clicked a button.");
+}
+
 const TaskForm = () => {
   return (
     <div className="container">
       <h1>Add New Task</h1>
-      {/* <form>
+      <form>
         <h2>Add New Task</h2>
         <div>
           <label htmlFor="date">Date</label>
@@ -13,14 +19,6 @@ const TaskForm = () => {
         <div>
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" />
-        </div>
-        <div>
-          <label htmlFor="category">Category</label>
-          <input type="text" category="category" id="category" />
-        </div>
-        <div>
-          <label htmlFor="priority">Priority</label>
-          <input type="text" priority="priority" id="priority" />
         </div>
         <div>
           <label htmlFor="status">Status</label>
@@ -35,8 +33,11 @@ const TaskForm = () => {
           <input type="text" comments="comments" id="comments" />
         </div>
         <br/>
-        <button type="submit" className="btn">Submit</button>
-      </form>    */}
+        {/* <button type="submit" className="btn">Submit</button> */}
+        <button onClick={handleSubmit}>
+          Submit
+        </button>
+      </form>   
     </div> 
   )
 }
